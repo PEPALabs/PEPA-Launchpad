@@ -1,0 +1,18 @@
+# pnpm
+node_modules/*
+*/node_modules/*
+node_modules
+
+# forc & cargo
+*/Cargo.lock
+/target/
+out/
+
+# pnpm
+*/pnpm-lock.yaml
+
+# editor
+.swp
+
+# mac
+.DS_STORE
