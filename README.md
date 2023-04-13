@@ -1,53 +1,35 @@
-## Getting Started
+## 💸 PEPA IDO 💸
 
-### Requirements
+PEPA IDO is a platform that enables new Fuel projects to raise capital by releasing an Initial DEX Offering (IDO). An IDO is a decentralized fundraising technique that enables investors to purchase new tokens directly from a project’s smart contract, as opposed to a centralized exchange.
 
-- [Node.js v16.15.0 or latest stable](https://nodejs.org/en/). We recommend using [nvm](https://github.com/nvm-sh/nvm) to install.
-- [PNPM v7.1.7 or latest stable](https://pnpm.io/installation/)
-- [Rust toolchain v0.16.0 or latest `stable`](https://www.rust-lang.org/tools/install)
-- [Forc v0.28.1](https://fuellabs.github.io/pepa/v0.28.1/introduction/installation.html#installing-from-pre-compiled-binaries)
-- [Docker v0.8.2 or latest stable](https://docs.docker.com/get-docker/)
-- [Docker Compose v2.6.0 or latest stable](https://docs.docker.com/get-docker/)
 
-### Testing Contracts in Local Machine
+PEPA IDO is built with [Sway](https://github.com/FuelLabs/sway), within [FuelVM](https://github.com/FuelLabs/fuel-specs), on the fastest modular execution layer [Fuel](https://fuel-labs.ghost.io/introducing-fuel-the-fastest-modular-execution-layer/). 
 
-First step is to set up and running a local Fuel node.
+## 📗 Table of contents
 
-#### Install dependencies and build contracts
+- [🎯 Core Elements](#-core-elements)
+- [🏗️ Architecture](#%EF%B8%8F-architecture)
+- [🚀 Getting Started](./docs/GETTING_STARTED.md)
+  - [Requirements](./docs/GETTING_STARTED.md#requirements)
+  - [Testing Contracts in Local Machine](./docs/GETTING_STARTED.md#testing-contracts-in-local-machine)
+    - [📦 - Install dependencies and build contracts](./docs/GETTING_STARTED.md#install-dependencies-and-build-contracts)
+    - [📒 - Run local node](./docs/GETTING_STARTED.md#run-local-node)
+    - [💻 - Deploy contracts to local Fuel node](./docs/GETTING_STARTED.md#deploy-contracts-to-local-fuel-node-with)
+    - [📚 - Writing and running cargo tests on contracts](./docs/GETTING_STARTED.md#writing-and-running-cargo-tests-on-contracts)
+- [🐽 Contribution Guide](./docs/CONTRIBUTING.md)
+  - [Finding Something to Work On](./docs/CONTRIBUTING.md#finding-something-to-work-on)
+  - [Contribution Flow](./docs/CONTRIBUTING.md#contribution-flow)
+- [📜 License](#-license)
 
-```
-pnpm install
-pnpm run --filter=pepaswap-scripts build && pnpm install
-pnpm exec pepaswap-scripts build
-```
+## 🎯 Core Elements
 
-#### Run local node
+- IDO Contracts
+- Factory Contracts
 
-```
-make -C docker services-run
-```
+## 🏗️ Architecture
 
-#### Deploy contracts to local Fuel node with 
+![IDO Architecture and user action](https://i.imgur.com/nXuNm5W.png)
 
-`pnpm exec swayswap-scripts deploy`
+## 📜 License
 
-#### Writing and Running Cargo Tests on contracts
-
-For auto-generation of contracts test we utilize `cargo-generate` package from Fuel repo: https://github.com/FuelLabs/sway-test-rs 
-
-First installing `cargo-generate` with command
-
-`cargo install cargo-generate`
-
-Then change into directory of contract and generate test with (you can supply your own template with different version set):
-
-`cargo generate --init https://github.com/fuellabs/sway-test-rs`
-
-Running test just like you run a regular cargo test
-
-`cargo test`
-
-#### Clean Up Services
-
-`make -C docker services-clean`
-
+The primary license for this repo is `Apache-2.0`, see [`LICENSE`](./LICENSE).
