@@ -5,7 +5,7 @@
 - [Node.js v16.15.0 or latest stable](https://nodejs.org/en/). We recommend using [nvm](https://github.com/nvm-sh/nvm) to install.
 - [PNPM v7.1.7 or latest stable](https://pnpm.io/installation/)
 - [Rust toolchain v0.16.0 or latest `stable`](https://www.rust-lang.org/tools/install)
-- [Forc v0.28.1](https://fuellabs.github.io/pepa/v0.28.1/introduction/installation.html#installing-from-pre-compiled-binaries)
+- [Forc v0.35.0](https://fuellabs.github.io/sway/v0.35.0/book/introduction/installation.html)
 - [Docker v0.8.2 or latest stable](https://docs.docker.com/get-docker/)
 - [Docker Compose v2.6.0 or latest stable](https://docs.docker.com/get-docker/)
 
