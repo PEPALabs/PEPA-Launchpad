@@ -1,0 +1,11 @@
+[project]
+authors = ["Jenesaispas"]
+entry = "main.sw"
+license = "Apache-2.0"
+name = "ido_contract"
+
+[dependencies]
+ido_abi = { path = "../ido_abi" }
+fee_model_abi = { path = "../fee_model_abi"}
+pricing_lib = {path = "../pricing_lib"}
+vending_machine_abi = {path = "../vending_machine_abi"}

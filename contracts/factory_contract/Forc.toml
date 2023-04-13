@@ -1,0 +1,8 @@
+[project]
+authors = ["leo"]
+entry = "main.sw"
+license = "Apache-2.0"
+name = "factory_contract"
+
+[dependencies]
+factory_abi = { path = "../factory_abi" }

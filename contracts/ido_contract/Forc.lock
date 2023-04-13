@@ -1,0 +1,39 @@
+[[package]]
+name = 'core'
+source = 'path+from-root-894BF76E6DA2FFD3'
+
+[[package]]
+name = 'fee_model_abi'
+source = 'path+from-root-40926DDE13C5A3EE'
+dependencies = ['std']
+
+[[package]]
+name = 'ido_abi'
+source = 'path+from-root-40926DDE13C5A3EE'
+dependencies = ['std']
+
+[[package]]
+name = 'ido_contract'
+source = 'member'
+dependencies = [
+    'fee_model_abi',
+    'ido_abi',
+    'pricing_lib',
+    'std',
+    'vending_machine_abi',
+]
+
+[[package]]
+name = 'pricing_lib'
+source = 'path+from-root-40926DDE13C5A3EE'
+dependencies = ['std']
+
+[[package]]
+name = 'std'
+source = 'git+https://github.com/fuellabs/sway?tag=v0.35.3#5d2b10bd83791d2eaff04206dbd45bfdd9cf23ff'
+dependencies = ['core']
+
+[[package]]
+name = 'vending_machine_abi'
+source = 'path+from-root-40926DDE13C5A3EE'
+dependencies = ['std']
